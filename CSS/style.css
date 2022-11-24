@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+body {
+  top: 0;
+  line-height: 1.5;
+}
+
+
+/*---------------Nav Bar---------------*/
+
+  
+  header {
+      background-color: rgb(181, 221, 229);
+      position: relative;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-bottom: solid 1px rgba(36, 43, 86, 0.39);
+      font-family: 'Poppins', sans-serif;
+  }
+  .logo {
+    width: 1rem;
+  
+  }
+  
+  .logo img {
+    width: 6rem;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .navBar {
+    display: none;
+    background-color: rgb(181, 221, 229);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+  }
+  
+  .navBar a {
+    color: rgb(66, 81, 163);
+    text-decoration: none;
+  }
+
+  .navBar a {
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .navBar a:hover {
+    color: #082712;
+  }
+  @media screen and (min-width: 1024px) {
+    .navBar {
+      display: flex;
+      white-space: nowrap;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 90%;
+      padding-top: 10px;
+      padding-left: 15%;
+    }
+    .logo img {
+      width: 8rem;
+    }
+  }
