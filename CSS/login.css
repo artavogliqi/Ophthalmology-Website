@@ -10,7 +10,7 @@ body {
     line-height: 1.5;
     top: 0;
     font-size: 18px;
-    background: url(./background.jpg);
+    /* background: url(./background.jpg); */
 
 }
 
@@ -74,7 +74,7 @@ body {
 }
 
 .form_input:focus {
-    border-color: #11a73eee;
+    border-color: #d03b09ee;
     background: #ffffff;
 }
 
@@ -99,11 +99,11 @@ body {
     border-radius: 5px;
     outline: none;
     cursor: pointer;
-    background: #11a73eee;
+    background: red;
 }
 
 .form_button:hover {
-    background: #007f67;
+    background: #e30e07;
     transition: 0.3s ease-in-out 0s;
 }
 

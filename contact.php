@@ -3,8 +3,8 @@
 ?>
   <div class="container-Contact">
   <form  name="contact" class="contact"  action="backend/message_backend.php" onsubmit="return validateForm()" method="post">
-    <h3>Na kontaktoni</h3>
-    <h4>Dergoni mesazh tek ne:</h4>
+    <h3>Contact us</h3>
+    <h4>Send us a message</h4>
     <fieldset>
       <input placeholder="Name" type="text" name="Name"  autofocus>
     </fieldset>

@@ -35,14 +35,14 @@ body {
   padding: 3%;
   width: 88%;
   color: rgb(255, 255, 255);
-  border-color: rgba(15, 168, 56, 0.815);
-  background-color: rgba(15, 168, 56, 0.815);
+  border-color: rgba(168, 15, 20, 0.815);
+  background-color: rgba(211, 36, 62, 0.815);
   border-radius: 10px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 130%;
   margin: 6%;
-  box-shadow: 1px 2px 10px 20px rgba(15, 168, 56, 0.815);
+  box-shadow: 1px 2px 10px 20px rgba(211, 36, 62, 0.815);
 }
 
 @media screen and (min-width: 768px) {
@@ -89,7 +89,6 @@ header {
 }
 .logo {
   width: 1rem;
-
 }
 
 .logo img {
@@ -115,7 +114,7 @@ header {
 button {
   padding: 9px 25px;
   margin: 10px;
-  background-color: #11a73eee;
+  background-color: #b8330eee;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -130,18 +129,18 @@ visibility: hidden;
 }
 
 .navBar a {
-  color: rgb(40, 42, 53);
+  color: rgb(53, 51, 40);
   text-decoration: none;
 }
 button:hover {
-  background-color: #007f67;
+  background-color: #3a0606;
   color: white;
 }
 .navBar a {
   transition: all 0.3s ease-in-out 0s;
 }
 .navBar a:hover {
-  color: #00a933;
+  color: #da0d1e;
 }
 @media screen and (min-width: 1024px) {
   .navBar {
@@ -160,6 +159,173 @@ button:hover {
     display: none;
   }
 }
+
+/*---------------SLIDER--------------- */
+#h1-Slide {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 50%;
+  margin: 10% 0 5%;
+  white-space: nowrap;
+  background-color: rgba(245, 245, 245, 0.952);
+}
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.slide {
+  width: 30rem;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slide {
+    width: 40rem;
+  }
+}
+
+/*---------------------About--------------------*/
+.grid-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 10% 5%;
+}
+.photo img {
+  width: 23rem;
+  height: 100%;
+  border-radius: 5%;
+  border-color: none;
+  box-shadow: 1px 2px 10px 11px white;
+}
+.pg,
+.photo {
+  padding: 20px;
+  color: rgb(37, 37, 37);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+#work {
+  width: 70%;
+}
+
+#about {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  padding: 0 50%;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  background-color: rgba(245, 245, 245, 0.952);
+}
+#team {
+  text-decoration: none;
+  color: rgb(173, 77, 21);
+}
+@media screen and (min-width: 1024px) {
+  .grid-1 {
+    display: grid;
+    margin: 2% 10% 5%;
+    grid-template-columns: 3fr 3fr;
+    grid-row: 100px;
+    grid-column: 400px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .photo img {
+    width: 33rem;
+  }
+  #about {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    padding: 0 50%;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    background-color: rgba(245, 245, 245, 0.952);
+  }
+}
+/*----------------Management--------------------*/
+.team {
+  margin: 1% 0 9%;
+
+}
+.photos-Management img {
+  width: 100%;
+  height: auto;
+  border-radius: 10%;
+  margin-top: 14%;
+}
+.pos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+.team h1 {
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem 50%;
+
+  white-space: nowrap;
+  background-color: rgba(245, 245, 245, 0.952);
+}
+@media screen and (min-width: 1024px) {
+  .photos-Management img {
+    width: 35rem;
+  }
+  .pos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+
+  }
+}
+
 
 /*---------------------Contact--------------------*/
 body {
@@ -243,4 +409,138 @@ textarea :hover {
 textarea:focus {
   outline: 0;
   border: 1px solid #aaa;
+}
+
+/* --------------------Footer---------------------- */
+.container {
+  max-width: 70%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #dd6654e1;
+  padding: 30px 0;
+}
+
+.footer-col {
+  width: 20%;
+  padding: 0 15px;
+
+}
+
+.footer-col h4 {
+  font-size: 20px;
+  color: whitesmoke;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 600;
+  position: relative;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  color: #d8d8d8;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.footer-col .social-links a {
+  display: inline;
+  height: 50px;
+  width: 50px;
+  background-color: rgba(97, 107, 116, 0);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 40%;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #314b8b;
+}
+
+.outer-footer {
+  margin-top: 2%;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  background-color: #b20505;
+}
+
+.outer-footer a {
+  color: whitesmoke;
+
+}
+
+@media screen and (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+.log {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+/* ----------------- Dashboard ---------------- */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+@media screen and (max-width: 574px) {
+  .table thead {
+    display: none;
+  }
+  .table, .table tbody, .table tr, .table td {
+    display: block;
+    width: 100%;
+  }
+  .table tr {
+    margin-bottom: 25px;
+  }
+  .table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    text-align: left;
+    color: black;
+  }
 }
